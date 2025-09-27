@@ -1,0 +1,82 @@
+//To Check With String
+console.log("To Check With String");
+let score1 = "33";
+console.log(typeof score1); //String
+console.log(typeof score1); //String
+
+let valueNumber1 = Number(score1);
+console.log(typeof valueNumber1); //Number
+console.log(typeof valueNumber1); //Number
+console.log(valueNumber1); //String convert to number
+
+//To check with String but not a pure number
+console.log("To Check With String but not a pure number");
+let score2 = "33abc";
+console.log(typeof score2); //String
+console.log(typeof score2); //String
+
+let valueNumber2 = Number(score2);
+console.log(typeof valueNumber2); //Number
+console.log(typeof valueNumber2); //Number
+console.log(valueNumber2); //NaN as Score is not a pure number but still it get convert but return NaN(Not a Number)
+
+//To Check with null
+console.log("To check with null");
+let score3 = null;
+console.log(typeof score3); //String
+console.log(typeof score3); //String
+
+let valueNumber3 = Number(score3);
+console.log(typeof valueNumber3); //Number
+console.log(typeof valueNumber3); //Number
+console.log(valueNumber3);
+
+//To check with undefine
+console.log("To check with undefine");
+let score4;
+console.log(typeof score4); //String
+console.log(typeof score4); //String
+
+let valueNumber4 = Number(score4);
+console.log(typeof valueNumber4); //Number
+console.log(typeof valueNumber4); //Number
+console.log(valueNumber4);
+
+//To check with boolean
+console.log("To check with boolean");
+let score5 = true;
+console.log(typeof score5); //String
+console.log(typeof score5); //String
+
+let valueNumber5 = Number(score5);
+console.log(typeof valueNumber5); //Number
+console.log(typeof valueNumber5); //Number
+console.log(valueNumber5);
+
+/*
+| **Scenario**                                   | **Value**                            | **Initial Type**     | **Converted Value** | **Converted Type** | **Explanation**                                                                                |
+| ---------------------------------------------- | ------------------------------------ | -------------------- | ------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
+| **To Check With String**                       | `let score1 = "33";`                 | `String`             | `33`                | `Number`           | String `"33"` is successfully converted to the number `33`.                                    |
+| **To Check With String**                       | `console.log(typeof score1);`        | `String`             |                     |                    | `typeof score1` returns `string`.                                                              |
+| **To Check With String**                       | `let valueNumber1 = Number(score1);` |                      | `33`                | `Number`           | `Number(score1)` converts `"33"` to `33`.                                                      |
+| **To Check With String but not a pure number** | `let score2 = "33abc";`              | `String`             | `NaN`               | `Number`           | The string `"33abc"` cannot be fully converted to a number, resulting in `NaN` (Not a Number). |
+| **To Check With String but not a pure number** | `console.log(valueNumber2);`         |                      | `NaN`               | `Number`           | `NaN` is the result of trying to convert `"33abc"` to a number.                                |
+| **To Check with Null**                         | `let score3 = null;`                 | `Object` (bug in JS) | `0`                 | `Number`           | `null` is converted to `0` when treated as a number.                                           |
+| **To Check with Null**                         | `console.log(typeof score3);`        | `Object`             |                     |                    | `typeof null` mistakenly returns `object` due to a JS bug.                                     |
+| **To Check with Undefined**                    | `let score4;`                        | `Undefined`          | `NaN`               | `Number`           | `undefined` cannot be converted to a number, so it becomes `NaN`.                              |
+| **To Check with Undefined**                    | `console.log(typeof score4);`        | `Undefined`          |                     |                    | `typeof score4` returns `undefined` because it has not been assigned a value.                  |
+| **To Check with Boolean**                      | `let score5 = true;`                 | `Boolean`            | `1`                 | `Number`           | `true` converts to `1` when treated as a number. `false` would convert to `0`.                 |
+| **To Check with Boolean**                      | `console.log(valueNumber5);`         | `1`                  |                     |                    | `true` becomes `1` when converted to a number.                                                 |
+
+
+Key Observations:
+
+String Conversion: A pure number in a string (like "33") converts successfully to the number 33.
+Non-Numeric String: A string containing non-numeric characters (like "33abc") results in NaN (Not a Number) when converted.
+Null Conversion: null is treated as 0 in numeric conversions.
+Undefined Conversion: undefined becomes NaN when converted to a number.\
+Boolean Conversion: true converts to 1, and false converts to 0.
+
+
+
+*/
