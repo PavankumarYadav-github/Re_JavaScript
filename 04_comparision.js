@@ -1,23 +1,22 @@
 
-console.log(2>1);
-console.log(2>=1);
-console.log(2<1);
-console.log(2==1);
-console.log(2!=1);
+console.log(2 > 1);   // true
+console.log(2 >= 1);  // true
+console.log(2 < 1);   // false
+console.log(2 == 1);  // false
+console.log(2 != 1);  // true
 
-console.log("2">1);
-console.log("02">1);
-console.log(null>0);
-console.log(null==0);
-console.log(null>=0);
+console.log("2" > 1);    // true (string "2" is coerced to number 2, so 2 > 1)
+console.log("02" > 1);   // true (string "02" is coerced to number 2, so 2 > 1)
+console.log(null > 0);    // false (null is coerced to 0, so 0 > 0 is false)
+console.log(null == 0);   // false (null is not equal to 0)
+console.log(null >= 0);   // true (null is coerced to 0, so 0 >= 0 is true)
 
+console.log(2 == "2");    // true (loose equality, string "2" is coerced to number 2)
+console.log(2 === "2");   // false (strict equality, number 2 is not equal to string "2")
 
-
-// console.log(2="2");
-console.log(2=="2");
-console.log(2==="2");
-
-
+console.log(undefined == 0);  // false (undefined is not equal to 0)
+console.log(undefined > 0);   // false (undefined is coerced to NaN, and NaN is not greater than 0)
+console.log(undefined < 0);   // false (undefined is coerced to NaN, and NaN is not less than 0)
 
 
 
