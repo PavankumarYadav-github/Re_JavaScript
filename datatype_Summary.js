@@ -9,9 +9,6 @@ runtime.
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 /*
 Primitive types are immutable values and are copied when passed to functions or assigned to another variable.
-*/
-
-/*
 •Characteristics of Primitive Types:
 
 Immutability: Once a primitive value is assigned, it cannot be modified
