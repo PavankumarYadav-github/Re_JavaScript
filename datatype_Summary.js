@@ -11,6 +11,15 @@ runtime.
 Primitive types are immutable values and are copied when passed to functions or assigned to another variable.
 */
 
+/*
+•Characteristics of Primitive Types:
+
+Immutability: Once a primitive value is assigned, it cannot be modified
+directly.
+Call by Value: When passing a primitive type to a function, the function gets a
+copy of the value, and changes to the copy do not affect the original value.
+*/
+
 const score=100;
 const scoreValue=100.3;
 
@@ -42,6 +51,21 @@ console.log(a);  // Output: 10
 
 // Reference (Non primitive) (They directly alocate memory refference from memory)
 // Array, Objects, Functions
+/*
+Reference types are objects, which can be arrays, objects, or functions. When a
+reference type is passed to a function or assigned to another variable, the
+reference to the original object is copied, not the actual value. Changes to the
+new variable affect the original object.
+
+•Characteristics of Reference Types:
+
+Mutable: Objects (Arrays, Objects, Functions) can be modified directly.
+Call by Reference: When passing a reference type to a function or assigning it
+to another variable, the reference (memory address) is copied, meaning both
+variables point to the same memory location. Changes in one affect the other.
+
+*/
+
 
 const heros=["Captain America","HULK","IronMan"];
 
