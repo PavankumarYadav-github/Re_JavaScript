@@ -176,6 +176,19 @@ target: The object that will receive the copied properties.
 
 */
 
+/*
+
+IMP NOTES from STRING
+Why the Stack and Heap?
+
+Stack: Used for simple variables like primitives (e.g., numbers, booleans,
+strings) and references to objects (like arrays, functions, or string objects).
+
+Heap: Used for objects (like new String(), arrays, functions, and more) because
+these can be large or complex, and they need to exist outside of the stack's
+limited memory.
+
+*/
 
 //------------------------------------STACK and HEAP---------------------------------------
 //Statck (Prminitive Type) , Heap (NON-Prminitive Type)
